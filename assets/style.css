@@ -11,18 +11,18 @@
     --quaternary-color: #379683;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-weight: bold;
     background-image: url(../assets/banner2.jfif);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -570px;
     background-color: var(--quaternary-color);
+    background-size: contain;
+    background-position-y: -25px;
 }
 
 
-header{
+header {
     padding: 20px;
     background-color: var(--tertiary-color);
     display: flex;
@@ -112,7 +112,7 @@ header nav ul li a:hover {
     margin: 0px;
     width: 100%;
     display: flex;
-}
+    }
 
 .work {
     font-size: 36px;
@@ -126,4 +126,97 @@ header nav ul li a:hover {
     border: solid 50px var(--quaternary-color);
     border-radius:200px;
 
+}
+
+.picture img {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    border: 0px;
+}
+
+.picture img:hover {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    border: 0px;
+}
+
+.picture h4 {font-size: 25px;
+    color: var(--tertiary-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.contact-info address, h3, p {
+    text-align: center;
+    border: none;
+    margin: auto;
+    float: center;
+    color: var(--primary-color);
+}
+
+footer h4 {
+    font-size: 15px;
+    float: right;
+}
+
+@media screen and (max-width:980px) {
+    header {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .welcome-box {
+        font-size: 15px;
+        float: center;
+        margin: auto;
+        min-width: 100%;
+        padding-bottom: 20px;
+        border: none;
+        text-align: center;
+    }
+
+    .about-me {
+        font-size: 35px;    font-size: 36px;
+        border: solid 2px 2px 2px 0px var(--secondary-color);
+        width: 100%;
+        border-radius: 0px;
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+
+        padding-top: 0px;
+        text-align:center;
+        padding-top: 20px;
+        min-height: 100px;
+        margin: auto;
+    }
+
+    .about-me-info {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width:575px) {
+        .picture img {
+        width: 80%;
+
+        }
+    }
 }
