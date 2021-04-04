@@ -135,6 +135,7 @@ header nav ul li a:hover {
     justify-content: space-around;
     margin: auto;
     border: 0px;
+    max-height: 400px;
 }
 
 .picture img:hover {
@@ -144,6 +145,7 @@ header nav ul li a:hover {
     justify-content: space-around;
     margin: auto;
     border: 0px;
+    max-height: 800px;
 }
 
 .picture h4 {font-size: 25px;
